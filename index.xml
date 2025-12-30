@@ -1,0 +1,2053 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Daniel Petri 666</title><link>https://dp666.net/</link><description>Recent content on Daniel Petri 666</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>© 2025 Daniel Petri</copyright><lastBuildDate>Fri, 28 Jun 2024 12:00:00 +0100</lastBuildDate><atom:link href="https://dp666.net/index.xml" rel="self" type="application/rss+xml"/><item><title>Create new custom Edge profiles with PowerShell</title><link>https://dp666.net/blog/create-new-custom-edge-profiles-with-powershell/</link><pubDate>Fri, 28 Jun 2024 12:00:00 +0100</pubDate><guid>https://dp666.net/blog/create-new-custom-edge-profiles-with-powershell/</guid><description>Working with multiple Edge profiles? Are you an consultant? Tired of selecting the wrong Edge icon in the taskbar? Sick of manually setting up Edge profiles on your new and shiny device?
+If your answer to any of the questions above is HELL YEAH! you’ve come to the right place.
+This script will help you to easily create new custom Edge profiles with PowerShell. This script is heavily inspired by Albert-Jan Schot blog Improved PowerShell to create Edge Profiles · CloudAppie but with some additional features. I highly recommend checking out his blogposts.</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dp666.net/blog/create-new-custom-edge-profiles-with-powershell/cover.png"/></item><item><title>Dynamic User and Device Enumeration on steroids</title><link>https://dp666.net/blog/dynamic-user-and-device-enumeration-on-steroids/</link><pubDate>Tue, 11 Jul 2023 12:00:00 +0100</pubDate><guid>https://dp666.net/blog/dynamic-user-and-device-enumeration-on-steroids/</guid><description>DUDE is evolving! A lot has happened since the beginning of DUDE.
+Let me share the initial purpose of the DUDE solution to refresh your memories:
+The purpose of this solution is to have dynamic user groups based on any attribute supported in Azure AD groups and a corresponding assigned device group. The script will then check who’s in the user group, grab all the users devices from Intune and add them to the corresponding device group. If a user is removed from the user group, their device will also automatically be removed from the device group.</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dp666.net/blog/dynamic-user-and-device-enumeration-on-steroids/cover.png"/></item><item><title>Dynamic Device Scope Tags with Azure Functions and Teams</title><link>https://dp666.net/blog/dynamic-device-scope-tags-with-azure-functions-and-teams/</link><pubDate>Fri, 28 Oct 2022 12:00:00 +0100</pubDate><guid>https://dp666.net/blog/dynamic-device-scope-tags-with-azure-functions-and-teams/</guid><description>So it’s finally time for a new version of DUDE! If you are reading about DUDE for the first time, I’ll tell you it stands for Dynamic User and Device Enumeration. The purpose of this solution is to have dynamic user groups based on any attribute supported in Azure AD groups and a corresponding assigned device group. The script will then check who’s in the user group, grab all the users devices from Intune and add them to the desired group. If a user is removed from the user group, their device will also automatically be removed from the device group.</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dp666.net/blog/dynamic-device-scope-tags-with-azure-functions-and-teams/cover.png"/></item><item><title>Dynamic Device Scope Tags with Azure Functions</title><link>https://dp666.net/blog/dynamic-device-scope-tags-with-azure-functions/</link><pubDate>Thu, 09 Dec 2021 12:00:00 +0100</pubDate><guid>https://dp666.net/blog/dynamic-device-scope-tags-with-azure-functions/</guid><description>In this previous blog post I showed you how to set dynamic device scope tags with azure automation. This time we will be using azure functions which will suite larger environments better. Based on my experience I would say that if you have 10k devices or less, go with the azure automation solution. If you have 10k devices or more, go with the azure functions solution.
+I will explain how you could set this up by creating dynamic user groups, for example for the HR department, and then have azure functions gather all the HR users devices and add them to the correct device group automatically. If the user attribute changes, for example if a user leaves the HR department, their devices will be removed from the device group automatically.</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dp666.net/blog/dynamic-device-scope-tags-with-azure-functions/cover.png"/></item><item><title>Dynamic Device Scope Tags with Azure Automation</title><link>https://dp666.net/blog/dynamic-device-scope-tags-with-azure-automation/</link><pubDate>Sat, 09 Oct 2021 12:00:00 +0100</pubDate><guid>https://dp666.net/blog/dynamic-device-scope-tags-with-azure-automation/</guid><description>It feels like eventually all customers end up in this situation where they need to tag devices for administration, invoicing or something else. So the purpose of this post is to help you automate this process with the help of a PowerShell runbook in azure automation.
+Updated 2021–10–10 — Thanks to Michael Mardahl for pointing out that managed identity should be used instead of client secrets.
+I will explain how you could set this up by creating dynamic user groups, for example for the HR department, and then have the Runbook gather all the HR users devices from Intune and add them to the correct device group automatically. If the user attribute changes, for example if a user leaves the HR department, their devices will be removed from the device group automatically.</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dp666.net/blog/dynamic-device-scope-tags-with-azure-automation/cover.png"/></item><item><title>About</title><link>https://dp666.net/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dp666.net/about/</guid><description> I’m Daniel Petri — an IT professional and drummer.
+By day I work with identity, security, automation, and modern endpoint management.
+By night I write and play heavy music, record at home or in my studio, and headbang.
+In between, I’m a dad and a family man trying to keep the balance.
+What I’m into # Identity & security (Microsoft 365 / Entra ID / Intune) Automation & scripting (PowerShell, GitOps workflows) Homelab building (self-hosting, home automation) Heavy music (drums, production, live shows) Vibe Living (intentional, AI-first way of working and living) A bit more personal # I’m sober and drug-free, and I care deeply about discipline, progress, and staying honest with myself.
+I’m also neurodivergent (AuDHD), which shapes how I think, learn, and build systems.</description></item><item><title>Bands</title><link>https://dp666.net/music/bands/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dp666.net/music/bands/</guid><description>Current bands # Lackland # Role: Drummer
+Years: 2023–present
+Genre: Punk Rock
+🌐 Official site - 🎧 Spotify - 📺 YouTube - 📷 Instagram - 👤 Facebook - ✉️ Contact
+Bloodtrust # Role: Drummer
+Years: 2020–present
+Genre: Hardcore / Metal</description></item><item><title>Gear &amp; Sponsors</title><link>https://dp666.net/music/gear/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dp666.net/music/gear/</guid><description>Drums # I’m proudly endorsed by Pearl Drums
+🥁 Pearl Drums - Artist Page
+Pearl Reference Pure Pearl Snare Drums Pearl Hardware Pearl Throne Pearl Pedals Cymbals # I’m proudly endorsed by Zildjian Cymbals
+🔔 Zildjian Cymbals - Artist Page
+Zildjian A and K Series Drumsticks # I’m proudly endorsed by Wincent Drumsticks
+🥢 Wincent Drumsticks</description></item><item><title>Links</title><link>https://dp666.net/links/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dp666.net/links/</guid><description>Social Media # 📷 Instagram 👤 Facebook 💼 LinkedIn 🐦 X (Twitter) 🔵 Bluesky 🎥 YouTube ✉️ Email Music & Bands # 🔥 Petrifire ⚡ Lackland 🩸 Bloodtrust Tech & Writing # ✍️ Blog 💻 GitHub Endorsements # 🥁 Pearl Drums - Artist Page 🔔 Zildjian Cymbals - Artist Page 🥢 Wincent Drumsticks</description></item><item><title>Live</title><link>https://dp666.net/music/live/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dp666.net/music/live/</guid><description>
+Total Shows
+399
+Countries
+18
+Bands
+13
+Bands
+Misconduct
+254
+Sir Reg
+49
+Subwaste
+47
+Sonic Syndicate
+15
+Lackland
+13
+Papillons
+8
+Bloodtrust
+4
+Knogjärn
+3
+Commit A Crime
+2
+Bloody Pain
+1
+Her Bright Skies
+1
+Skallbank
+1
+The Unguided
+1
+Top countries
+Germany
+143
+Sweden
+140
+France
+27
+Switzerland
+16
+Czech Republic
+14
+Austria
+10
+United Kingdom
+8
+Netherlands
+7
+Finland
+6
+Norway
+5
+All gigs
+Date
+Band
+Venue
+City
+Country
+2025-10-31
+Lackland
+Hova Rock City
+Hova
+Sweden
+2025-08-23
+Lackland
+Vitå Rockfest
+Vitå
+Sweden
+2025-08-09
+Lackland
+Malmöfestivalen
+Malmö
+Sweden
+2025-07-12
+Lackland
+Kristianstad Rockfest
+Kristianstad
+Sweden
+2025-07-05
+Lackland
+Töreboda Festivalen
+Töreboda
+Sweden
+2025-04-25
+Bloodtrust
+Kvarteret & CoÖrebroSweden2025-04-12Lackland
+Jane Doe
+Östersund
+Sweden
+2025-03-14
+Lackland
+Långburksfestivalen
+Stockholm
+Sweden
+2025-02-15
+Lackland
+Mimfest
+Borlänge
+Sweden
+2025-01-25
+Knogjärn
+Nöjesfabriken
+Karlstad
+Sweden
+2024-11-30
+Lackland
+Rockbaren
+Göteborg
+Sweden
+2024-11-29
+Lackland
+Pub Anchor
+Stockholm
+Sweden
+2024-08-17
+The Unguided
+Ovenpaa
+Kopervik
+Norway
+2023-11-24
+Knogjärn
+Pumpehuset
+Copenhagen
+Denmark
+2023-10-21
+Bloodtrust
+Klubb Kross
+Karlstad
+Sweden
+2023-09-09
+Skallbank
+Vaterland
+Oslo
+Norway
+2023-04-28
+Lackland
+Valand
+Göteborg
+Sweden
+2023-02-11
+Sir Reg
+Ögir Will Arise / Frimis
+Örebro
+Sweden
+2023-02-03
+Lackland
+Satin
+Örebro
+Sweden
+2022-12-03
+Sir Reg
+Bishops Arms
+Köping
+Sweden
+2022-12-02
+Lackland
+Pub Anchor
+Stockholm
+Sweden
+2022-11-12
+Bloodtrust
+Björnes
+Örebro
+Sweden
+2022-10-29
+Sir Reg
+Dynamo
+Norrköping
+Sweden
+2022-10-28
+Sir Reg
+Björnes
+Örebro
+Sweden
+2022-10-22
+Sir Reg
+Katalin
+Uppsala
+Sweden
+2022-10-21
+Sir Reg
+Biografbaren
+Eskilstuna
+Sweden
+2022-10-20
+Sir Reg
+Slaktkyrkan
+Stockholm
+Sweden
+2022-10-14
+Sir Reg
+House of Blues
+Borlänge
+Sweden
+2022-10-07
+Sir Reg
+Bishops Arms
+Köping
+Sweden
+2022-10-01
+Sir Reg
+Backstage
+Trollhättan
+Sweden
+2022-09-30
+Sir Reg
+Charles Dickens
+Helsingborg
+Sweden
+2022-08-27
+Sir Reg
+Sjørock Festivalen
+Levanger
+Norway
+2022-07-09
+Bloodtrust
+Godsmagasinet
+Ljungby
+Sweden
+2022-05-28
+Sir Reg
+Köpingsfesten
+Köping
+Sweden
+2022-05-27
+Sir Reg
+Köpingsfesten
+Köping
+Sweden
+2022-05-22
+Sir Reg
+Punk & Disorderly FestivalBerlinGermany
+2022-05-07
+Sir Reg
+Rock Am Kuhteich
+Deutzen
+Germany
+2022-05-06
+Sir Reg
+AZO
+Ottersberg
+Germany
+2022-04-16
+Sir Reg
+Eldorado Bar
+Biel
+Switzerland
+2022-04-14
+Sir Reg
+MieV
+Geislingen
+Germany
+2022-04-12
+Sir Reg
+Alter
+Mannheim
+Germany
+2022-04-11
+Sir Reg
+ASta
+Mainz
+Germany
+2022-04-10
+Sir Reg
+Scruffy's
+Karlsruhe
+Germany
+2022-04-09
+Sir Reg
+The Buchholz Saloon
+Altlandsberg
+Germany
+2022-04-08
+Sir Reg
+Wild At Heart
+Berlin
+Germany
+2022-04-07
+Sir Reg
+Subrosa
+Dortmund
+Germany
+2022-04-06
+Sir Reg
+Druckluft
+Oberhausen
+Germany
+2022-04-05
+Sir Reg
+Bastard Club
+Osnabruck
+Germany
+2022-04-03
+Sir Reg
+K3
+Hameln
+Germany
+2022-04-02
+Sir Reg
+Drafthouse
+Hamburg
+Germany
+2022-03-19
+Sir Reg
+Thyon St. Patrick's Day
+Thyon
+Switzerland
+2021-12-04
+Knogjärn
+Northern Rockfest
+Umeå
+Sweden
+2021-10-23
+Sir Reg
+Bishops Arms
+Köping
+Sweden
+2021-10-21
+Sir Reg
+Close-Up Båten
+Stockholm
+Sweden
+2020-01-18
+Sir Reg
+Irish Folk Rock Party VI
+Karlsruhe
+Germany
+2020-01-17
+Sir Reg
+Alte Hakerei
+Karlsruhe
+Germany
+2019-12-07
+Sir Reg
+Bishops Arms
+Köping
+Sweden
+2019-10-26
+Sir Reg
+Kellerclub
+Stuttgart
+Germany
+2019-10-25
+Sir Reg
+MieV
+Geislingen
+Germany
+2019-10-24
+Sir Reg
+Bierschinken Festival
+Dortmund
+Germany
+2019-10-23
+Sir Reg
+Druckluft
+Oberhausen
+Germany
+2019-10-21
+Sir Reg
+Scruffy's
+Karlsruhe
+Germany
+2019-10-19
+Sir Reg
+Ajz Bahndamm
+Wermelskirchen
+Germany
+2019-10-18
+Sir Reg
+Treibsand
+Lübeck
+Germany
+2019-10-17
+Sir Reg
+Ostpol
+Dresden
+Germany
+2019-10-16
+Sir Reg
+Kassablanca
+Jena
+Germany
+2019-10-15
+Sir Reg
+The Tube
+Düsseldorf
+Germany
+2019-10-14
+Sir Reg
+Kulturcafe
+Mainz
+Germany
+2019-10-12
+Sir Reg
+Getränker Keller
+Haldern
+Germany
+2019-10-04
+Sir Reg
+Craicstock at Dynamo
+Norrköping
+Sweden
+2019-09-07
+Sir Reg
+Angeliter Open Air
+Taarstedt
+Germany
+2019-08-31
+Misconduct
+Strangriede Open Air
+Hannover
+Germany
+2019-08-30
+Misconduct
+Franken Bar
+Berlin
+Germany
+2019-08-24
+Misconduct
+Dirty Harry
+Gävle
+Sweden
+2018-11-24
+Papillons
+O´Learys
+Örebro
+Sweden
+2018-10-12
+Subwaste
+Frimis Salonger
+Örebro
+Sweden
+2018-08-25
+Misconduct
+ASHtival
+Hollabrunn
+Austria
+2018-08-24
+Misconduct
+Holz
+Niesky
+Germany
+2018-08-17
+Misconduct
+Stemweder Open Air
+Stemweder
+Germany
+2018-08-10
+Misconduct
+Punkrock Holiday Festival
+Tolmin
+Slovenia
+2018-08-04
+Sonic Syndicate
+Piippurock
+Ii
+Finland
+2018-08-03
+Sonic Syndicate
+Jack The Rooster
+Tampere
+Finland
+2018-08-02
+Sonic Syndicate
+Elmun Baari
+Helsinki
+Finland
+2018-07-14
+Misconduct
+Mighty Sounds Festival
+Prague
+Czech Republic
+2018-07-07
+Sonic Syndicate
+Hamnfestivalen
+Luleå
+Sweden
+2018-07-06
+Sonic Syndicate
+O´Learys
+Umeå
+Sweden
+2018-07-05
+Sonic Syndicate
+Statt
+Söderhamn
+Sweden
+2018-07-04
+Papillons
+Hembygdsgårgen
+Järnskog
+Sweden
+2018-06-16
+Misconduct
+Montebello Rock Fest
+Montebello
+Canada
+2018-06-02
+Papillons
+The Rock Bar
+Karlstad
+Sweden
+2018-05-19
+Papillons
+Nya Kupolen
+Karlskoga
+Sweden
+2018-05-12
+Sonic Syndicate
+The Crypt
+Linköping
+Sweden
+2018-05-11
+Sonic Syndicate
+Harry B James
+Stockholm
+Sweden
+2017-12-27
+Sonic Syndicate
+Santa Rock Cruise
+Stockholm
+Sweden
+2017-12-09
+Papillons
+Rock Bar
+Karlskoga
+Sweden
+2017-11-26
+Sonic Syndicate
+Backstage
+Trollhättan
+Sweden
+2017-10-20
+Sonic Syndicate
+Sundspärlan
+Helsingborg
+Sweden
+2017-10-07
+Misconduct
+Rock Bar
+Karlskoga
+Sweden
+2017-09-16
+Papillons
+Garage
+Karlskoga
+Sweden
+2017-09-02
+Sonic Syndicate
+Harry B James
+Stockholm
+Sweden
+2017-08-18
+Commit A Crime
+Rock Bar
+Karlskoga
+Sweden
+2017-07-21
+Sonic Syndicate
+Badaboom Fest
+Simferopol
+Ukraine
+2017-05-26
+Sonic Syndicate
+Adrenaline Cruise
+Stockholm
+Sweden
+2017-05-20
+Sonic Syndicate
+Radio Rock Cruise
+Helsinki
+Finland
+2017-05-06
+Papillons
+Rock Bar
+Karlskoga
+Sweden
+2017-04-30
+Subwaste
+Rock-Kultur-Werkstatt
+Viersen
+Germany
+2017-04-29
+Subwaste
+Jam Club
+Koblenz
+Germany
+2017-04-28
+Subwaste
+Monster Records
+Hannover
+Germany
+2016-04-30
+Misconduct
+Karlskogapunken
+Karlskoga
+Sweden
+2016-02-26
+Misconduct
+Bankiren
+Västerås
+Sweden
+2016-02-19
+Misconduct
+Heaven & HellKarlstadSweden2015-12-26Papillons
+Studion
+Karlskoga
+Sweden
+2015-10-24
+Subwaste
+Hugo
+Finspång
+Sweden
+2015-09-26
+Subwaste
+Bykrogen i Norra Bro
+Örebro
+Sweden
+2015-09-19
+Subwaste
+Plektrum Bar
+Örebro
+Sweden
+2015-08-08
+Misconduct
+Tells Bells Fesival
+Villmar
+Germany
+2015-08-07
+Misconduct
+Free & Easy FestivalMunichGermany2015-08-04
+Misconduct
+Punkrock Holiday Festival
+Tolmin
+Slovenia
+2015-08-02
+Misconduct
+Lifetree Clash
+Chemnitz
+Germany
+2015-08-01
+Misconduct
+Pony-Hof Festival
+Bremen
+Germany
+2015-07-31
+Misconduct
+Kraken St. Pauli
+Hamburg
+Germany
+2015-02-21
+Misconduct
+OJH
+Riesa
+Germany
+2015-02-20
+Misconduct
+AJZ Bahndamm
+Wermelskirchen
+Germany
+2015-02-19
+Misconduct
+Backstage
+Munich
+Germany
+2015-02-18
+Misconduct
+Groove Station
+Dresden
+Germany
+2015-02-17
+Misconduct
+Klub Buben
+Prague
+Czech Republic
+2015-02-15
+Misconduct
+Cortina Bob
+Berlin
+Germany
+2015-02-14
+Misconduct
+Holz
+Niesky
+Germany
+2015-02-13
+Misconduct
+AJZ
+Leisnig
+Germany
+2015-01-31
+Misconduct
+Mastis
+Kristinehamn
+Sweden
+2015-01-30
+Misconduct
+Båten
+Karlstad
+Sweden
+2014-08-08
+Her Bright Skies
+Getaway Rock
+Gävle
+Sweden
+2014-08-01
+Misconduct
+Gruvpunken
+Norberg
+Sweden
+2014-07-26
+Misconduct
+Rock Your Brain Festival
+Selestat
+France
+2014-07-25
+Misconduct
+Nauwieser Fest
+Sarrebruck
+Germany
+2014-07-24
+Misconduct
+Backstage
+Munich
+Germany
+2014-07-23
+Misconduct
+Bastard Club
+Osnabruck
+Germany
+2014-06-21
+Misconduct
+Hellfest
+Clisson
+France
+2014-05-10
+Misconduct
+Mad Muni Festival
+Saanen
+Switzerland
+2014-05-03
+Misconduct
+Forellenhof
+Salzgitter
+Germany
+2014-05-02
+Misconduct
+Sounds n Arts
+Bamberg
+Germany
+2014-05-01
+Misconduct
+Loud Fest
+Zurich
+Switzerland
+2014-04-30
+Misconduct
+AJZ
+Weissenburg
+Germany
+2014-04-29
+Misconduct
+Los Eeastos Festival
+Leipzig
+Germany
+2014-03-15
+Misconduct
+Dirty Harry
+Gävle
+Sweden
+2014-03-14
+Misconduct
+Byggarsalen
+Stockholm
+Sweden
+2014-01-25
+Misconduct
+Mastis
+Kristinehamn
+Sweden
+2013-11-25
+Subwaste
+Kulturhuset B-Salen
+Örebro
+Sweden
+2013-11-23
+Misconduct
+Underwerket
+Copenhagen
+Denmark
+2013-11-16
+Misconduct
+Backstage
+Skövde
+Sweden
+2013-11-15
+Misconduct
+Satin
+Örebro
+Sweden
+2013-11-02
+Misconduct
+Backstage
+Munich
+Germany
+2013-11-01
+Misconduct
+Zentrum Alternberg
+Oberhausen
+Germany
+2013-10-31
+Misconduct
+Four Rooms
+Leipzig
+Germany
+2013-09-20
+Misconduct
+Debaser Strand
+Stockholm
+Sweden
+2013-09-14
+Misconduct
+Statt
+Karlskoga
+Sweden
+2013-09-07
+Misconduct
+Live at Heart
+Örebro
+Sweden
+2013-09-06
+Misconduct
+Sticky Fingers
+Göteborg
+Sweden
+2013-08-31
+Subwaste
+King Rock Club
+Falun
+Sweden
+2013-08-30
+Subwaste
+Secret Show
+Örebro
+Sweden
+2013-08-29
+Subwaste
+Peter Weiss Haus
+Rostock
+Germany
+2013-08-27
+Subwaste
+Secret Show
+Hannover
+Germany
+2013-08-24
+Subwaste
+Secret Show
+Meerane
+Germany
+2013-08-23
+Subwaste
+Exil
+Usti Nab Lebem
+Czech Republic
+2013-08-22
+Subwaste
+Cross Club
+Prague
+Czech Republic
+2013-07-19
+Subwaste
+Skeppsbrofestivalen
+Karlskrona
+Sweden
+2013-06-16
+Misconduct
+Dreamhack
+Jönköping
+Sweden
+2013-05-25
+Misconduct
+Open Air Gaul
+Lana
+Italy
+2013-05-24
+Misconduct
+Juha West
+Stuttgart
+Germany
+2013-05-23
+Misconduct
+Shelter
+Vienna
+Austria
+2013-05-22
+Misconduct
+Rock Bar Lira
+Valasske Mezirici
+Czech Republic
+2013-05-21
+Misconduct
+Klub 007
+Prague
+Czech Republic
+2013-05-19
+Misconduct
+Exil
+Usti Nab Lebem
+Czech Republic
+2013-05-18
+Misconduct
+Holz
+Niesky
+Germany
+2013-05-17
+Misconduct
+OJH
+Riesa
+Germany
+2013-05-16
+Misconduct
+Coretex
+Berlin
+Germany
+2013-05-16
+Misconduct
+Wild at Heart
+Berlin
+Germany
+2013-04-13
+Misconduct
+King Rock Club
+Falun
+Sweden
+2013-04-13
+Misconduct
+Club 700
+Örebro
+Sweden
+2013-03-16
+Commit A Crime
+Broder Tuck
+Stockholm
+Sweden
+2013-02-09
+Subwaste
+Gamla Gatan
+Örebro
+Sweden
+2013-01-19
+Misconduct
+Thrasher Island
+Göteborg
+Sweden
+2012-11-30
+Subwaste
+King Rock Club
+Falun
+Sweden
+2012-09-15
+Subwaste
+Emil
+Zittau
+Germany
+2012-09-14
+Subwaste
+SilverWings
+Berlin
+Germany
+2012-09-13
+Subwaste
+Dynamo
+Zurich
+Switzerland
+2012-09-12
+Subwaste
+Tanke
+Dornstadt
+Germany
+2012-09-11
+Subwaste
+Lucrezia
+Genova
+Italy
+2012-09-09
+Subwaste
+Alvarado Street
+Rome
+Italy
+2012-09-08
+Subwaste
+Upside Down
+Fermo
+Italy
+2012-09-07
+Subwaste
+CSW
+Klagenfurt
+Austria
+2012-09-06
+Subwaste
+Arena
+Vienna
+Austria
+2012-09-04
+Subwaste
+Cross Club
+Prague
+Czech Republic
+2012-09-03
+Subwaste
+Bei Chez Heinz
+Hannover
+Germany
+2012-09-02
+Misconduct
+Accoustic Show
+Niesky
+Germany
+2012-09-01
+Subwaste
+Underwerket
+Copenhagen
+Denmark
+2012-09-01
+Misconduct
+Biubstock Festival
+Chancy
+Switzerland
+2012-08-31
+Misconduct
+Holz
+Niesky
+Germany
+2012-08-31
+Subwaste
+Klubb Kaktus
+Örebro
+Sweden
+2012-08-03
+Subwaste
+Sjöslaget
+Kumla
+Sweden
+2012-07-13
+Subwaste
+Summernight Punkrock @ Bryggeriet
+Motala
+Sweden
+2012-05-26
+Subwaste
+Basterdized & Undertakers FestivalNyköpingSweden
+2012-05-16
+Subwaste
+Klubb Kaktus
+Örebro
+Sweden
+2012-05-12
+Subwaste
+The London Stone
+London
+United Kingdom
+2012-04-27
+Subwaste
+Apparat
+Koblenz
+Germany
+2012-04-25
+Subwaste
+BLA
+Bonn
+Germany
+2012-04-24
+Subwaste
+Bei Chez Heinz
+Hannover
+Germany
+2012-04-22
+Subwaste
+Karthaus Club
+Schwedt
+Germany
+2012-04-21
+Subwaste
+Cafe Handgemenge
+Rathenow
+Germany
+2012-04-20
+Subwaste
+Cortina Bob
+Berlin
+Germany
+2012-04-19
+Subwaste
+Hafenklang
+Hamburg
+Germany
+2012-04-18
+Subwaste
+Stadtgarten
+Erfurt
+Germany
+2012-04-17
+Subwaste
+Hemperium
+Ulm
+Germany
+2012-03-30
+Subwaste
+Virus
+Örebro
+Sweden
+2012-03-02
+Subwaste
+Stationen
+Örebro
+Sweden
+2011-11-19
+Misconduct
+La Laiterie Club
+Strasbourg
+France
+2011-11-18
+Misconduct
+Le Marais
+Montigny-Les-Vesoul
+France
+2011-11-17
+Misconduct
+Le VIP
+Saint-Nazaire
+France
+2011-11-16
+Misconduct
+Le Nouveau Casino
+Paris
+France
+2011-11-15
+Misconduct
+Ninkasi Kao
+Lyon
+France
+2011-11-12
+Misconduct
+Dark Side
+Karlskoga
+Sweden
+2011-11-11
+Misconduct
+Glada Ankan
+Karlstad
+Sweden
+2011-11-08
+Misconduct
+Harry B James
+Stockholm
+Sweden
+2011-11-05
+Misconduct
+Backstage
+Skövde
+Sweden
+2011-09-10
+Misconduct
+Heilig Länder Rock
+Breitbrunn
+Germany
+2011-09-09
+Misconduct
+Backstage
+Munich
+Germany
+2011-09-03
+Misconduct
+Uppsala Revolutionary Festival
+Uppsala
+Sweden
+2011-08-27
+Misconduct
+Epipapu Festival
+La Chatre
+France
+2011-08-26
+Misconduct
+P60
+Amstelveen
+Netherlands
+2011-08-13
+Misconduct
+Club Vaudeville
+Lindau
+Germany
+2011-08-12
+Misconduct
+Kloemprock Festival
+Bunsbeek
+Belgium
+2011-08-08
+Misconduct
+Salle Des Fetes
+Saulzoir
+France
+2011-08-06
+Misconduct
+Open Air Gränichen
+Granichen
+Switzerland
+2011-08-04
+Misconduct
+Sucks N Summer Festival
+Leisnig
+Germany
+2011-07-30
+Misconduct
+Bretinga Festival
+Breitungen
+Germany
+2011-07-29
+Misconduct
+Trementines
+Guerguiniou
+France
+2011-07-28
+Misconduct
+Resurrection Festival
+Viveiro
+Spain
+2011-07-27
+Misconduct
+Semana Negra Carpa Noise
+Gijon
+Spain
+2011-07-23
+Misconduct
+Les Berges du Rock
+Jurancon
+France
+2011-07-22
+Misconduct
+Art Sonic Festival Grounds
+Briouze
+France
+2011-07-20
+Misconduct
+Bastard Club
+Osnabruck
+Germany
+2011-07-12
+Misconduct
+Cassiopeia
+Berlin
+Germany
+2011-07-11
+Misconduct
+Dynamo
+Zurich
+Switzerland
+2011-07-09
+Misconduct
+Red Corner Festival
+Moosburg
+Germany
+2011-07-08
+Misconduct
+Iduna
+Drachten
+Netherlands
+2011-06-29
+Misconduct
+Karlskoga Festen
+Karlskoga
+Sweden
+2011-04-30
+Misconduct
+Central Baren
+Södertälje
+Sweden
+2011-04-29
+Misconduct
+Bryggeriet
+Motala
+Sweden
+2011-04-25
+Misconduct
+Zenith
+Munich
+Germany
+2011-04-24
+Misconduct
+Pirate Satellite Festival
+Stuttgart
+Germany
+2011-04-22
+Misconduct
+OJH
+Riesa
+Germany
+2011-04-21
+Misconduct
+Thüringen Halle
+Erfurt
+Germany
+2011-04-19
+Misconduct
+Fryshuset
+Stockholm
+Sweden
+2011-04-18
+Misconduct
+Spektrum
+Oslo
+Norway
+2011-04-17
+Misconduct
+Färs & Frosta Sparbank ArenaLundSweden
+2011-04-16
+Misconduct
+Ringlockschuppen
+Bielefeld
+Germany
+2011-04-02
+Misconduct
+AntAttack Festival
+Dillingen
+Germany
+2011-03-16
+Misconduct
+The Fighting Cocks
+Kingston
+United Kingdom
+2011-03-15
+Misconduct
+Trillians Rockbar
+Newcastle Upon Tyne
+United Kingdom
+2011-03-13
+Misconduct
+13th Note
+Glasgow
+United Kingdom
+2011-03-12
+Misconduct
+Bannermans
+Edinburgh
+United Kingdom
+2011-03-10
+Misconduct
+Club Revolution
+Peterborough
+United Kingdom
+2011-03-04
+Misconduct
+Girlsnight
+Karlskoga
+Sweden
+2011-02-26
+Misconduct
+Viva Nightclub
+Borås
+Sweden
+2011-02-12
+Misconduct
+Holz
+Niesky
+Germany
+2011-02-11
+Misconduct
+Replugged
+Wien
+Austria
+2011-01-29
+Misconduct
+Holz
+Niesky
+Germany
+2011-01-28
+Misconduct
+Garage
+Saabrucken
+Germany
+2011-01-27
+Misconduct
+Backstage
+Munich
+Germany
+2011-01-26
+Misconduct
+Wild at Heart
+Berlin
+Germany
+2010-12-18
+Misconduct
+Dino's Bar & GrillMariehamnFinland2010-12-17
+Misconduct
+Dino's Bar & GrillMariehamnFinland2010-12-04
+Misconduct
+Alcazar
+Stockholm
+Sweden
+2010-12-03
+Misconduct
+Nightshift
+Karlskoga
+Sweden
+2010-11-27
+Misconduct
+Trappan
+Norrköping
+Sweden
+2010-11-20
+Misconduct
+På G Rock
+Falkenberg
+Sweden
+2010-11-19
+Misconduct
+Sticky Fingers
+Göteborg
+Sweden
+2010-11-13
+Misconduct
+Mastis
+Kristinehamn
+Sweden
+2010-11-12
+Misconduct
+Virus
+Örebro
+Sweden
+2010-10-30
+Misconduct
+De Pit
+Terneuzen
+Netherlands
+2010-10-29
+Misconduct
+Mondo Bizarro
+Rennes
+France
+2010-10-28
+Misconduct
+Peniche Ingelrock
+Valenciennes
+France
+2010-10-25
+Misconduct
+Nordfest
+Bremen
+Germany
+2010-10-24
+Misconduct
+JZ Herten Nord
+Herten
+Germany
+2010-10-23
+Misconduct
+Sounds n Arts
+Bamberg
+Germany
+2010-10-22
+Misconduct
+Event Stage
+Zizers
+Switzerland
+2010-10-21
+Misconduct
+Backstage
+Munich
+Germany
+2010-10-19
+Misconduct
+Mondo Bizarro
+Rennes
+France
+2010-10-17
+Misconduct
+Progresja Club
+Warsaw
+Poland
+2010-10-16
+Misconduct
+Forty Kleparz
+Krakow
+Poland
+2010-10-15
+Misconduct
+Estrada
+Bydgoszcz
+Poland
+2010-09-04
+Misconduct
+Rock im Loch
+Lünen-Horstmar
+Germany
+2010-09-03
+Misconduct
+Club Pavillon
+Wuppertal
+Germany
+2010-08-28
+Misconduct
+Rock Im Wald
+Oberwolfach
+Germany
+2010-08-27
+Misconduct
+Hechfest
+Dresden
+Germany
+2010-08-26
+Misconduct
+E&L RocknachtAlsfeldGermany2010-08-23
+Misconduct
+Zwölfzehn Club
+Stuttgart
+Germany
+2010-08-21
+Misconduct
+Pod Parou Festival
+Maravska Trebova
+Czech Republic
+2010-08-20
+Misconduct
+Rock Bar Lira
+SťAté
+Czech Republic
+2010-08-19
+Misconduct
+Klub 007
+Prague
+Czech Republic
+2010-08-18
+Misconduct
+Lucerna Music Bar
+Prague
+Czech Republic
+2010-07-19
+Misconduct
+Lido
+Berlin
+Germany
+2010-07-17
+Misconduct
+Burning Seasons Festival
+Hartberg
+Austria
+2010-07-16
+Misconduct
+Serentegi Festival
+Schloss
+Germany
+2010-07-15
+Misconduct
+Mighty Sounds
+Tábor
+Czech Republic
+2010-07-04
+Misconduct
+Rosrock Festival
+Rossum
+Netherlands
+2010-07-03
+Misconduct
+Rosrock Festival
+Rossum
+Netherlands
+2010-07-02
+Misconduct
+Sklab Fest
+Trbovlje
+Slovenia
+2010-06-27
+Misconduct
+Barracudas Rock Bar
+Madrid
+Spain
+2010-06-26
+Misconduct
+Demolition Fest
+Barcelona
+Spain
+2010-06-19
+Misconduct
+Metropol
+Hngelo
+Netherlands
+2010-06-16
+Misconduct
+Sticky Fingers
+Göteborg
+Sweden
+2010-06-12
+Misconduct
+Åsbro Rock
+Åsbro
+Sweden
+2010-06-05
+Misconduct
+Teenage Riot Festival
+Vienna
+Austria
+2010-06-04
+Misconduct
+Wilwarin Festival
+Ellerdorf
+Germany
+2010-05-09
+Misconduct
+Sticky Fingers
+Göteborg
+Sweden
+2010-04-30
+Misconduct
+Virus
+Örebro
+Sweden
+2010-04-29
+Misconduct
+Alcazar
+Stockholm
+Sweden
+2010-04-24
+Misconduct
+Cafe Kometen
+Kristinehamn
+Sweden
+2010-04-17
+Misconduct
+Statt
+Karlskoga
+Sweden
+2010-04-03
+Misconduct
+Nöjesfabriken
+Karlstad
+Sweden
+2010-03-20
+Misconduct
+Endland Experience Fest
+A Coruña
+Spain
+2010-02-05
+Misconduct
+Loppen
+Copenhagen
+Denmark
+2009-11-21
+Misconduct
+Folkets Hus
+Kristinehamn
+Sweden
+2009-11-20
+Misconduct
+Statt
+Karlskoga
+Sweden
+2009-11-01
+Misconduct
+Het Bolwerk
+Sneek
+Netherlands
+2009-10-30
+Misconduct
+Le Baron
+Caudry
+France
+2009-10-24
+Misconduct
+Offenes Jugendhaus
+Riesa
+Germany
+2009-10-23
+Misconduct
+Wild at Heart
+Berlin
+Germany
+2009-10-18
+Misconduct
+Roter Baum
+Dresden
+Germany
+2009-10-16
+Misconduct
+Kofmehl
+Solothurn
+Switzerland
+2009-10-10
+Misconduct
+Alter Schlachthof
+Hollabrunn
+Austria
+2009-10-09
+Misconduct
+AJZ
+Chemnitz
+Germany
+2009-08-22
+Misconduct
+Rock My Ass
+Strullendorf
+Germany
+2009-08-21
+Misconduct
+Festival Couvre Feu
+Corsept
+France
+2009-08-01
+Misconduct
+Festival
+Bamberg
+Germany
+2009-07-29
+Misconduct
+Putte i Parken
+Karlskoga
+Sweden
+2009-07-01
+Misconduct
+Herrgårdsrock
+Hällefors
+Sweden
+2009-07-01
+Misconduct
+Sölvesborg
+Sweden
+2009-07-01
+Misconduct
+Töreboda Festivalen
+Töreboda
+Sweden
+2009-05-30
+Misconduct
+Yeah Festivalen
+Örebro
+Sweden
+2009-05-23
+Misconduct
+Rosis
+Dresden
+Germany
+2009-05-22
+Misconduct
+Jugendzentrum Nord
+Herten
+Germany
+2009-05-08
+Misconduct
+Statt
+Karlskoga
+Sweden
+2009-03-29
+Misconduct
+Wild at Heart
+Berlin
+Germany
+2009-03-27
+Misconduct
+Garage
+Weisswasser
+Germany
+2009-03-21
+Misconduct
+Sauvigny Les Bois
+Salle des Fetes
+France
+2009-01-01
+Misconduct
+Rock It
+Örebro
+Sweden
+2009-01-01
+Misconduct
+JZ Herten Nord
+Herten
+Germany
+2008-11-15
+Misconduct
+Valsverket
+Degerfors
+Sweden
+2008-08-22
+Misconduct
+Statt
+Karlskoga
+Sweden
+2008-08-16
+Bloody Pain
+Gästhamnsfestivalen
+Kristinehamn
+Sweden
+2008-08-02
+Misconduct
+Sucks N Summer Festival
+Leisnig
+Germany
+2008-08-01
+Misconduct
+Cassiopeia
+Berlin
+Germany
+2008-07-26
+Misconduct
+Kristinehamns Kalaset
+Kristinehamn
+Sweden
+2008-06-25
+Misconduct
+Karlskoga Festen
+Karlskoga
+Sweden
+2007-12-15
+Misconduct
+Silence Sux Festival
+Kaisten
+Switzerland
+2007-12-14
+Misconduct
+Club Yellowstone
+Bergkamen
+Germany
+2007-09-28
+Misconduct
+AJZ
+Chemnitz
+Germany
+2007-09-21
+Misconduct
+Bikini Test
+La Chaux-de-Fonds
+Switzerland
+2007-07-21
+Misconduct
+The New Beat Festival
+Davos
+Switzerland
+2007-06-29
+Misconduct
+With Full Force Festival
+Löbnitz
+Germany
+2007-04-21
+Misconduct
+Garage
+Bergen
+Norway
+2007-03-06
+Misconduct
+Treasure Fest
+Örebro
+Sweden
+2007-03-01
+Misconduct
+Arena
+Karlstad
+Sweden
+2006-11-12
+Misconduct
+BPM Club
+Zwickau
+Germany
+2006-11-11
+Misconduct
+Kulturhaus
+Chur
+France
+2006-11-10
+Misconduct
+Ramanoir
+Gennevilliers
+France
+2006-11-09
+Misconduct
+BSC
+Poitiers
+France
+2006-11-08
+Misconduct
+Mondo Bizarro
+Rennes
+France
+2006-11-05
+Misconduct
+Sharkys
+Recklinghausen
+Germany
+2006-11-04
+Misconduct
+AJZ
+Chemnitz
+Germany
+2006-11-03
+Misconduct
+Club Habana
+Bamberg
+Germany
+2006-11-02
+Misconduct
+Thrillbeats Club
+Dresden
+Germany
+2006-11-01
+Misconduct
+Wild at Heart
+Berlin
+Germany
+2006-10-20
+Misconduct
+Pop Corner
+Karlskoga
+Sweden
+2006-05-27
+Misconduct
+Battle Of Misconduct
+Kristinehamn
+Sweden
+2006-02-09
+Misconduct
+Trillians Rockbar
+Newcastle upon Tyne
+United Kingdom
+2006-02-08
+Misconduct
+Joseph's Well
+Leeds
+United Kingdom
+2006-02-05
+Misconduct
+La Peche
+Paris
+France
+2006-02-04
+Misconduct
+Le 5.8
+Clamecy
+France
+2006-02-03
+Misconduct
+Mondo Bizarro
+Rennes
+France
+2006-02-02
+Misconduct
+TBA
+Tulle
+France
+2006-02-01
+Misconduct
+La Maroquinerie
+Paris
+France
+2006-01-28
+Misconduct
+Wake Up Festival
+Thusis
+Switzerland
+2006-01-27
+Misconduct
+Kofmehl
+Solothurn
+Switzerland
+2006-01-24
+Misconduct
+Musikhaus
+Graz
+Austria
+2006-01-22
+Misconduct
+The Black Pes Club
+Prague
+Czech Republic
+2006-01-21
+Misconduct
+AJZ
+Chemnitz
+Germany
+2006-01-20
+Misconduct
+Thrillbeats Club
+Dresden
+Germany
+2006-01-19
+Misconduct
+Tommy Haus
+Berlin
+Germany
+2005-11-20
+Misconduct
+AJZ
+Leisnig
+Germany
+2005-11-12
+Misconduct
+Blinddog Festival
+Obdach
+Austria
+2005-09-24
+Misconduct
+Broekrock Festival
+Hertsberge
+Belgium
+2005-09-16
+MIsconduct
+Sonic Ballroom
+Köln
+Germany
+2005-09-10
+Misconduct
+AJZ
+Leisnig
+Germany
+2005-08-26
+Misconduct
+Wild at Heart
+Berlin
+Germany
+2005-08-13
+Misconduct
+Sucks N Summer Festival
+Leisnig
+Germany
+2005-08-12
+Misconduct
+United Force Festival
+Switzerland</description></item><item><title>Releases</title><link>https://dp666.net/music/releases/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dp666.net/music/releases/</guid><description> Albums & EPs # Lackland – Everybody's Looking For A Revolution
+Role: Drums</description></item><item><title>Video</title><link>https://dp666.net/music/video/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dp666.net/music/video/</guid><description> Drumcams # Lackland - Riding With The Driver
+Live drumcam performance</description></item></channel></rss>
