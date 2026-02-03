@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>dp666</title><link>https://dp666.net/</link><description>Recent content on dp666</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>© 2026 Daniel Petri</copyright><lastBuildDate>Fri, 28 Jun 2024 12:00:00 +0100</lastBuildDate><atom:link href="https://dp666.net/index.xml" rel="self" type="application/rss+xml"/><item><title>Create new custom Edge profiles with PowerShell</title><link>https://dp666.net/blog/create-new-custom-edge-profiles-with-powershell/</link><pubDate>Fri, 28 Jun 2024 12:00:00 +0100</pubDate><guid>https://dp666.net/blog/create-new-custom-edge-profiles-with-powershell/</guid><description>&lt;p>Working with multiple Edge profiles? Are you an consultant? Tired of selecting the wrong Edge icon in the taskbar? Sick of manually setting up Edge profiles on your new and shiny device?&lt;/p>
 &lt;p>If your answer to any of the questions above is HELL YEAH! you’ve come to the right place.&lt;/p>
-&lt;p>This script will help you to easily create new custom Edge profiles with PowerShell. This script is heavily inspired by &lt;a href="https://www.cloudappie.nl/" target="_blank">Albert-Jan Schot&lt;/a> blog &lt;a href="https://www.cloudappie.nl/improved-edge-profiles-powershell/" target="_blank">Improved PowerShell to create Edge Profiles · CloudAppie&lt;/a> but with some additional features. I highly recommend checking out his blogposts.&lt;/p></description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dp666.net/blog/create-new-custom-edge-profiles-with-powershell/cover.png"/></item><item><title>Dynamic User and Device Enumeration on steroids</title><link>https://dp666.net/blog/dynamic-user-and-device-enumeration-on-steroids/</link><pubDate>Tue, 11 Jul 2023 12:00:00 +0100</pubDate><guid>https://dp666.net/blog/dynamic-user-and-device-enumeration-on-steroids/</guid><description>&lt;p>DUDE is evolving! A lot has happened since the beginning of DUDE.&lt;/p>
+&lt;p>This script will help you to easily create new custom Edge profiles with PowerShell. This script is heavily inspired by &lt;a href="https://www.cloudappie.nl/" target="_blank" rel="noreferrer">Albert-Jan Schot&lt;/a> blog &lt;a href="https://www.cloudappie.nl/improved-edge-profiles-powershell/" target="_blank" rel="noreferrer">Improved PowerShell to create Edge Profiles · CloudAppie&lt;/a> but with some additional features. I highly recommend checking out his blogposts.&lt;/p></description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dp666.net/blog/create-new-custom-edge-profiles-with-powershell/cover.png"/></item><item><title>Dynamic User and Device Enumeration on steroids</title><link>https://dp666.net/blog/dynamic-user-and-device-enumeration-on-steroids/</link><pubDate>Tue, 11 Jul 2023 12:00:00 +0100</pubDate><guid>https://dp666.net/blog/dynamic-user-and-device-enumeration-on-steroids/</guid><description>&lt;p>DUDE is evolving! A lot has happened since the beginning of DUDE.&lt;/p>
 &lt;p>Let me share the initial purpose of the DUDE solution to refresh your memories:&lt;/p>
-&lt;p>&lt;em>The purpose of this solution is to have dynamic user groups based on any attribute supported in Azure AD groups and a corresponding assigned device group. The script will then check who’s in the user group, grab all the users devices from Intune and add them to the corresponding device group. If a user is removed from the user group, their device will also automatically be removed from the device group.&lt;/em>&lt;/p></description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dp666.net/blog/dynamic-user-and-device-enumeration-on-steroids/cover.png"/></item><item><title>Dynamic Device Scope Tags with Azure Functions and Teams</title><link>https://dp666.net/blog/dynamic-device-scope-tags-with-azure-functions-and-teams/</link><pubDate>Fri, 28 Oct 2022 12:00:00 +0100</pubDate><guid>https://dp666.net/blog/dynamic-device-scope-tags-with-azure-functions-and-teams/</guid><description>&lt;p>So it’s finally time for a new version of DUDE! If you are reading about DUDE for the first time, I’ll tell you it stands for Dynamic User and Device Enumeration. The purpose of this solution is to have dynamic user groups based on any attribute supported in Azure AD groups and a corresponding assigned device group. The script will then check who’s in the user group, grab all the users devices from Intune and add them to the desired group. If a user is removed from the user group, their device will also automatically be removed from the device group.&lt;/p></description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dp666.net/blog/dynamic-device-scope-tags-with-azure-functions-and-teams/cover.png"/></item><item><title>Dynamic Device Scope Tags with Azure Functions</title><link>https://dp666.net/blog/dynamic-device-scope-tags-with-azure-functions/</link><pubDate>Thu, 09 Dec 2021 12:00:00 +0100</pubDate><guid>https://dp666.net/blog/dynamic-device-scope-tags-with-azure-functions/</guid><description>&lt;p>In &lt;a href="https://dp666.net/blog/dynamic-device-scope-tags-with-azure-automation" target="_blank">this&lt;/a> previous blog post I showed you how to set dynamic device scope tags with azure automation. This time we will be using azure functions which will suite larger environments better. Based on my experience I would say that if you have 10k devices or less, go with the azure automation solution. If you have 10k devices or more, go with the azure functions solution.&lt;/p>
+&lt;p>&lt;em>The purpose of this solution is to have dynamic user groups based on any attribute supported in Azure AD groups and a corresponding assigned device group. The script will then check who’s in the user group, grab all the users devices from Intune and add them to the corresponding device group. If a user is removed from the user group, their device will also automatically be removed from the device group.&lt;/em>&lt;/p></description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dp666.net/blog/dynamic-user-and-device-enumeration-on-steroids/cover.png"/></item><item><title>Dynamic Device Scope Tags with Azure Functions and Teams</title><link>https://dp666.net/blog/dynamic-device-scope-tags-with-azure-functions-and-teams/</link><pubDate>Fri, 28 Oct 2022 12:00:00 +0100</pubDate><guid>https://dp666.net/blog/dynamic-device-scope-tags-with-azure-functions-and-teams/</guid><description>&lt;p>So it’s finally time for a new version of DUDE! If you are reading about DUDE for the first time, I’ll tell you it stands for Dynamic User and Device Enumeration. The purpose of this solution is to have dynamic user groups based on any attribute supported in Azure AD groups and a corresponding assigned device group. The script will then check who’s in the user group, grab all the users devices from Intune and add them to the desired group. If a user is removed from the user group, their device will also automatically be removed from the device group.&lt;/p></description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dp666.net/blog/dynamic-device-scope-tags-with-azure-functions-and-teams/cover.png"/></item><item><title>Dynamic Device Scope Tags with Azure Functions</title><link>https://dp666.net/blog/dynamic-device-scope-tags-with-azure-functions/</link><pubDate>Thu, 09 Dec 2021 12:00:00 +0100</pubDate><guid>https://dp666.net/blog/dynamic-device-scope-tags-with-azure-functions/</guid><description>&lt;p>In &lt;a href="https://dp666.net/blog/dynamic-device-scope-tags-with-azure-automation" target="_blank" rel="noreferrer">this&lt;/a> previous blog post I showed you how to set dynamic device scope tags with azure automation. This time we will be using azure functions which will suite larger environments better. Based on my experience I would say that if you have 10k devices or less, go with the azure automation solution. If you have 10k devices or more, go with the azure functions solution.&lt;/p>
 &lt;p>I will explain how you could set this up by creating dynamic user groups, for example for the HR department, and then have azure functions gather all the HR users devices and add them to the correct device group automatically. If the user attribute changes, for example if a user leaves the HR department, their devices will be removed from the device group automatically.&lt;/p></description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dp666.net/blog/dynamic-device-scope-tags-with-azure-functions/cover.png"/></item><item><title>Dynamic Device Scope Tags with Azure Automation</title><link>https://dp666.net/blog/dynamic-device-scope-tags-with-azure-automation/</link><pubDate>Sat, 09 Oct 2021 12:00:00 +0100</pubDate><guid>https://dp666.net/blog/dynamic-device-scope-tags-with-azure-automation/</guid><description>&lt;p>It feels like eventually all customers end up in this situation where they need to tag devices for administration, invoicing or something else. So the purpose of this post is to help you automate this process with the help of a PowerShell runbook in azure automation.&lt;/p>
 &lt;p>&lt;em>Updated 2021–10–10 — Thanks to Michael Mardahl for pointing out that managed identity should be used instead of client secrets.&lt;/em>&lt;/p>
 &lt;p>I will explain how you could set this up by creating dynamic user groups, for example for the HR department, and then have the Runbook gather all the HR users devices from Intune and add them to the correct device group automatically. If the user attribute changes, for example if a user leaves the HR department, their devices will be removed from the device group automatically.&lt;/p></description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dp666.net/blog/dynamic-device-scope-tags-with-azure-automation/cover.png"/></item><item><title>About</title><link>https://dp666.net/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dp666.net/about/</guid><description>&lt;p>&lt;figure>&lt;img
@@ -74,11 +74,11 @@ I’m also neurodivergent (AuDHD), which shapes how I think, learn, and build sy
 &lt;p>Role: Drummer&lt;br>
 Years: 2023–present&lt;br>
 Genre: Punk Rock&lt;/p>
-&lt;p>🌐 &lt;a href="https://lackland.se/" target="_blank">Official site&lt;/a> -
-🎧 &lt;a href="https://open.spotify.com/artist/2VbkR19iVQMMXggaxeNiM4?si=JzD7HrR4SYuzgNfversNHg" target="_blank">Spotify&lt;/a> -
-📺 &lt;a href="https://www.youtube.com/@lacklandband" target="_blank">YouTube&lt;/a> -
-📷 &lt;a href="https://www.instagram.com/lackland.band/" target="_blank">Instagram&lt;/a> -
-👤 &lt;a href="https://www.facebook.com/people/Lackland/100087333882407/" target="_blank">Facebook&lt;/a> -
+&lt;p>🌐 &lt;a href="https://lackland.se/" target="_blank" rel="noreferrer">Official site&lt;/a> -
+🎧 &lt;a href="https://open.spotify.com/artist/2VbkR19iVQMMXggaxeNiM4?si=JzD7HrR4SYuzgNfversNHg" target="_blank" rel="noreferrer">Spotify&lt;/a> -
+📺 &lt;a href="https://www.youtube.com/@lacklandband" target="_blank" rel="noreferrer">YouTube&lt;/a> -
+📷 &lt;a href="https://www.instagram.com/lackland.band/" target="_blank" rel="noreferrer">Instagram&lt;/a> -
+👤 &lt;a href="https://www.facebook.com/people/Lackland/100087333882407/" target="_blank" rel="noreferrer">Facebook&lt;/a> -
 ✉️ &lt;a href="mailto:lacklandband@gmail.com" >Contact&lt;/a>&lt;/p>
 
 &lt;h3 class="relative group">Bloodtrust
@@ -102,7 +102,7 @@ Genre: Hardcore / Metal&lt;/p></description></item><item><title>Gear &amp; Spons
  
 &lt;/h2>
 &lt;p>I&amp;rsquo;m proudly endorsed by Pearl Drums&lt;br>
-🥁 &lt;a href="https://pearldrum.com/eu/artist/daniel-petri/13791" target="_blank">Pearl Drums - Artist Page&lt;/a>&lt;/p>
+🥁 &lt;a href="https://pearldrum.com/eu/artist/daniel-petri/13791" target="_blank" rel="noreferrer">Pearl Drums - Artist Page&lt;/a>&lt;/p>
 &lt;ul>
 &lt;li>Pearl Reference Pure&lt;/li>
 &lt;li>Pearl Snare Drums&lt;/li>
@@ -122,7 +122,7 @@ Genre: Hardcore / Metal&lt;/p></description></item><item><title>Gear &amp; Spons
  
 &lt;/h2>
 &lt;p>I&amp;rsquo;m proudly endorsed by Zildjian Cymbals&lt;br>
-🔔 &lt;a href="https://zildjian.com/blogs/artist/daniel-petri" target="_blank">Zildjian Cymbals - Artist Page&lt;/a>&lt;/p>
+🔔 &lt;a href="https://zildjian.com/blogs/artist/daniel-petri" target="_blank" rel="noreferrer">Zildjian Cymbals - Artist Page&lt;/a>&lt;/p>
 &lt;ul>
 &lt;li>Zildjian A and K Series&lt;/li>
 &lt;/ul>
@@ -138,7 +138,7 @@ Genre: Hardcore / Metal&lt;/p></description></item><item><title>Gear &amp; Spons
  
 &lt;/h2>
 &lt;p>I&amp;rsquo;m proudly endorsed by Wincent Drumsticks&lt;br>
-🥢 &lt;a href="https://www.wincentdrumsticks.com/?v=efad7abb323e" target="_blank">Wincent Drumsticks&lt;/a>&lt;/p></description></item><item><title>Links</title><link>https://dp666.net/links/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dp666.net/links/</guid><description>&lt;h2 class="relative group">Social Media
+🥢 &lt;a href="https://www.wincentdrumsticks.com/?v=efad7abb323e" target="_blank" rel="noreferrer">Wincent Drumsticks&lt;/a>&lt;/p></description></item><item><title>Links</title><link>https://dp666.net/links/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dp666.net/links/</guid><description>&lt;h2 class="relative group">Social Media
  &lt;div id="social-media" class="anchor">&lt;/div>
  
  &lt;span
@@ -148,12 +148,12 @@ Genre: Hardcore / Metal&lt;/p></description></item><item><title>Gear &amp; Spons
  
 &lt;/h2>
 &lt;ul>
-&lt;li>📷 &lt;a href="https://instagram.com/danielpetri666" target="_blank">Instagram&lt;/a>&lt;/li>
-&lt;li>👤 &lt;a href="https://www.facebook.com/danielpetri666" target="_blank">Facebook&lt;/a>&lt;/li>
-&lt;li>💼 &lt;a href="https://www.linkedin.com/in/danielpetri666" target="_blank">LinkedIn&lt;/a>&lt;/li>
-&lt;li>🐦 &lt;a href="https://x.com/danielpetri666" target="_blank">X (Twitter)&lt;/a>&lt;/li>
-&lt;li>🔵 &lt;a href="https://bsky.app/profile/danielpetri666.bsky.social" target="_blank">Bluesky&lt;/a>&lt;/li>
-&lt;li>🎥 &lt;a href="https://www.youtube.com/@danielpetri666" target="_blank">YouTube&lt;/a>&lt;/li>
+&lt;li>📷 &lt;a href="https://instagram.com/danielpetri666" target="_blank" rel="noreferrer">Instagram&lt;/a>&lt;/li>
+&lt;li>👤 &lt;a href="https://www.facebook.com/danielpetri666" target="_blank" rel="noreferrer">Facebook&lt;/a>&lt;/li>
+&lt;li>💼 &lt;a href="https://www.linkedin.com/in/danielpetri666" target="_blank" rel="noreferrer">LinkedIn&lt;/a>&lt;/li>
+&lt;li>🐦 &lt;a href="https://x.com/danielpetri666" target="_blank" rel="noreferrer">X (Twitter)&lt;/a>&lt;/li>
+&lt;li>🔵 &lt;a href="https://bsky.app/profile/danielpetri666.bsky.social" target="_blank" rel="noreferrer">Bluesky&lt;/a>&lt;/li>
+&lt;li>🎥 &lt;a href="https://www.youtube.com/@danielpetri666" target="_blank" rel="noreferrer">YouTube&lt;/a>&lt;/li>
 &lt;li>✉️ &lt;a href="mailto:d.petri@outlook.com" >Email&lt;/a>&lt;/li>
 &lt;/ul>
 
@@ -167,9 +167,9 @@ Genre: Hardcore / Metal&lt;/p></description></item><item><title>Gear &amp; Spons
  
 &lt;/h2>
 &lt;ul>
-&lt;li>🔥 &lt;a href="https://linktr.ee/petrifireofficial" target="_blank">Petrifire&lt;/a>&lt;/li>
-&lt;li>⚡ &lt;a href="https://linktr.ee/lacklandband" target="_blank">Lackland&lt;/a>&lt;/li>
-&lt;li>🩸 &lt;a href="https://linktr.ee/bloodtrusthc" target="_blank">Bloodtrust&lt;/a>&lt;/li>
+&lt;li>🔥 &lt;a href="https://linktr.ee/petrifireofficial" target="_blank" rel="noreferrer">Petrifire&lt;/a>&lt;/li>
+&lt;li>⚡ &lt;a href="https://linktr.ee/lacklandband" target="_blank" rel="noreferrer">Lackland&lt;/a>&lt;/li>
+&lt;li>🩸 &lt;a href="https://linktr.ee/bloodtrusthc" target="_blank" rel="noreferrer">Bloodtrust&lt;/a>&lt;/li>
 &lt;/ul>
 
 &lt;h2 class="relative group">Tech &amp;amp; Writing
@@ -182,8 +182,8 @@ Genre: Hardcore / Metal&lt;/p></description></item><item><title>Gear &amp; Spons
  
 &lt;/h2>
 &lt;ul>
-&lt;li>✍️ &lt;a href="https://dp666.net/blog" target="_blank">Blog&lt;/a>&lt;/li>
-&lt;li>💻 &lt;a href="https://github.com/danielpetri666" target="_blank">GitHub&lt;/a>&lt;/li>
+&lt;li>✍️ &lt;a href="https://dp666.net/blog" target="_blank" rel="noreferrer">Blog&lt;/a>&lt;/li>
+&lt;li>💻 &lt;a href="https://github.com/danielpetri666" target="_blank" rel="noreferrer">GitHub&lt;/a>&lt;/li>
 &lt;/ul>
 
 &lt;h2 class="relative group">Endorsements
@@ -196,9 +196,9 @@ Genre: Hardcore / Metal&lt;/p></description></item><item><title>Gear &amp; Spons
  
 &lt;/h2>
 &lt;ul>
-&lt;li>🥁 &lt;a href="https://pearldrum.com/artist/daniel-petri/13791" target="_blank">Pearl Drums - Artist Page&lt;/a>&lt;/li>
-&lt;li>🔔 &lt;a href="https://zildjian.com/blogs/artist/daniel-petri" target="_blank">Zildjian Cymbals - Artist Page&lt;/a>&lt;/li>
-&lt;li>🥢 &lt;a href="https://www.wincent.se/" target="_blank">Wincent Drumsticks&lt;/a>&lt;/li>
+&lt;li>🥁 &lt;a href="https://pearldrum.com/artist/daniel-petri/13791" target="_blank" rel="noreferrer">Pearl Drums - Artist Page&lt;/a>&lt;/li>
+&lt;li>🔔 &lt;a href="https://zildjian.com/blogs/artist/daniel-petri" target="_blank" rel="noreferrer">Zildjian Cymbals - Artist Page&lt;/a>&lt;/li>
+&lt;li>🥢 &lt;a href="https://www.wincent.se/" target="_blank" rel="noreferrer">Wincent Drumsticks&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>Live</title><link>https://dp666.net/music/live/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dp666.net/music/live/</guid><description>&lt;link rel="stylesheet" href="https://dp666.net/lib/leaflet/leaflet.css" />
 &lt;script src="https://dp666.net/lib/leaflet/leaflet.js">&lt;/script>
 
