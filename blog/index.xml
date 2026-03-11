@@ -1,4 +1,23 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blog on dp666</title><link>https://dp666.net/blog/</link><description>Recent content in Blog on dp666</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>© 2026 Daniel Petri</copyright><lastBuildDate>Fri, 28 Jun 2024 12:00:00 +0100</lastBuildDate><atom:link href="https://dp666.net/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>Create new custom Edge profiles with PowerShell</title><link>https://dp666.net/blog/create-new-custom-edge-profiles-with-powershell/</link><pubDate>Fri, 28 Jun 2024 12:00:00 +0100</pubDate><guid>https://dp666.net/blog/create-new-custom-edge-profiles-with-powershell/</guid><description>&lt;p>Working with multiple Edge profiles? Are you an consultant? Tired of selecting the wrong Edge icon in the taskbar? Sick of manually setting up Edge profiles on your new and shiny device?&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blog on dp666</title><link>https://dp666.net/blog/</link><description>Recent content in Blog on dp666</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>© 2026 Daniel Petri</copyright><lastBuildDate>Wed, 11 Mar 2026 06:06:06 +0100</lastBuildDate><atom:link href="https://dp666.net/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>DUDE Manager — Deterministic User → Device Sync in Intune</title><link>https://dp666.net/blog/dude-manager-deterministic-user-to-device-sync-in-intune/</link><pubDate>Wed, 11 Mar 2026 06:06:06 +0100</pubDate><guid>https://dp666.net/blog/dude-manager-deterministic-user-to-device-sync-in-intune/</guid><description>&lt;p>If you manage Intune at scale, you&amp;rsquo;ve probably hit this wall:&lt;/p>
+&lt;p>Intune assigns policies to &lt;strong>device groups&lt;/strong>.
+Most organizations are structured around &lt;strong>user groups&lt;/strong>.
+There is no native bridge between the two.&lt;/p>
+&lt;p>Dynamic device groups cannot evaluate user membership.
+Filters cannot cross the user-to-device boundary.&lt;/p>
+&lt;p>So teams script around it.&lt;/p>
+&lt;p>&lt;strong>DUDE Manager is what happens when you decide to do it properly.&lt;/strong>&lt;/p>
+&lt;hr>
+
+&lt;h2 class="relative group">Why native tools don&amp;rsquo;t solve this
+ &lt;div id="why-native-tools-dont-solve-this" class="anchor">&lt;/div>
+ 
+ &lt;span
+ class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+ &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#why-native-tools-dont-solve-this" aria-label="Anchor">#&lt;/a>
+ &lt;/span>
+ 
+&lt;/h2>
+&lt;p>Dynamic device groups evaluate device attributes — &lt;code>deviceOSType&lt;/code>, &lt;code>deviceCategory&lt;/code>, &lt;code>enrollmentProfileName&lt;/code> — not directory user membership.&lt;/p></description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dp666.net/blog/dude-manager-deterministic-user-to-device-sync-in-intune/cover.png"/></item><item><title>Create new custom Edge profiles with PowerShell</title><link>https://dp666.net/blog/create-new-custom-edge-profiles-with-powershell/</link><pubDate>Fri, 28 Jun 2024 12:00:00 +0100</pubDate><guid>https://dp666.net/blog/create-new-custom-edge-profiles-with-powershell/</guid><description>&lt;p>Working with multiple Edge profiles? Are you an consultant? Tired of selecting the wrong Edge icon in the taskbar? Sick of manually setting up Edge profiles on your new and shiny device?&lt;/p>
 &lt;p>If your answer to any of the questions above is HELL YEAH! you’ve come to the right place.&lt;/p>
 &lt;p>This script will help you to easily create new custom Edge profiles with PowerShell. This script is heavily inspired by &lt;a href="https://www.cloudappie.nl/" target="_blank" rel="noreferrer">Albert-Jan Schot&lt;/a> blog &lt;a href="https://www.cloudappie.nl/improved-edge-profiles-powershell/" target="_blank" rel="noreferrer">Improved PowerShell to create Edge Profiles · CloudAppie&lt;/a> but with some additional features. I highly recommend checking out his blogposts.&lt;/p></description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dp666.net/blog/create-new-custom-edge-profiles-with-powershell/cover.png"/></item><item><title>Dynamic User and Device Enumeration on steroids</title><link>https://dp666.net/blog/dynamic-user-and-device-enumeration-on-steroids/</link><pubDate>Tue, 11 Jul 2023 12:00:00 +0100</pubDate><guid>https://dp666.net/blog/dynamic-user-and-device-enumeration-on-steroids/</guid><description>&lt;p>DUDE is evolving! A lot has happened since the beginning of DUDE.&lt;/p>
 &lt;p>Let me share the initial purpose of the DUDE solution to refresh your memories:&lt;/p>
