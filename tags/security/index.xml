@@ -26,4 +26,14 @@
  
 &lt;/h2>
 &lt;p>You have 40 Conditional Access policies. Some target users, some target groups, some target roles. Some include locations, some exclude them. Some enforce MFA, some enforce compliant devices, some do both with different operators. And you need to answer the question: &amp;ldquo;What is our current CA posture?&amp;rdquo;&lt;/p>
-&lt;p>The Entra ID portal shows one policy at a time. There is no native export. There is no overview that lets you see all policies side by side with all their conditions and controls. So you end up with a shared spreadsheet that someone manually maintains and that is always out of date.&lt;/p></description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dp666.net/blog/conditional-access-policy-report/cover.png"/></item></channel></rss>
+&lt;p>The Entra ID portal shows one policy at a time. There is no native export. There is no overview that lets you see all policies side by side with all their conditions and controls. So you end up with a shared spreadsheet that someone manually maintains and that is always out of date.&lt;/p></description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dp666.net/blog/conditional-access-policy-report/cover.png"/></item><item><title>Setting Managed Identity Permissions via PowerShell (No Portal Needed)</title><link>https://dp666.net/blog/managed-identity-permissions-powershell/</link><pubDate>Fri, 26 Sep 2025 10:00:00 +0100</pubDate><guid>https://dp666.net/blog/managed-identity-permissions-powershell/</guid><description>&lt;h2 class="relative group">The Problem
+ &lt;div id="the-problem" class="anchor">&lt;/div>
+ 
+ &lt;span
+ class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+ &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#the-problem" aria-label="Anchor">#&lt;/a>
+ &lt;/span>
+ 
+&lt;/h2>
+&lt;p>Managed Identities are the recommended way to authenticate Azure resources &amp;ndash; Azure Functions, Logic Apps, Automation Accounts &amp;ndash; to Microsoft Graph. No secrets. No certificates. No credential rotation. The identity is managed by the platform.&lt;/p>
+&lt;p>The problem comes when you need to assign Graph API permissions to that identity. Microsoft added basic portal support for this in late 2023 via Enterprise Applications, but it is click-heavy, not scriptable, and gives you no audit trail. If you&amp;rsquo;re deploying infrastructure as code, managing multiple identities, or need to know what every managed identity in your tenant can do &amp;ndash; you need PowerShell.&lt;/p></description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dp666.net/blog/managed-identity-permissions-powershell/cover.png"/></item></channel></rss>

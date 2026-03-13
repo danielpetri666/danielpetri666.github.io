@@ -28,4 +28,14 @@
  
 &lt;/h2>
 &lt;p>Every B2B collaboration, vendor engagement, and external consultant invitation creates a guest account in your Entra ID tenant. Over time, these accumulate. People leave partner organizations, projects end, contracts expire &amp;ndash; but the guest accounts persist. They retain whatever access they were granted, their tokens remain valid, and nobody reviews them.&lt;/p>
-&lt;p>Access reviews help if someone&amp;rsquo;s running them. Usually, nobody is.&lt;/p></description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dp666.net/blog/guest-account-lifecycle-management/cover.png"/></item></channel></rss>
+&lt;p>Access reviews help if someone&amp;rsquo;s running them. Usually, nobody is.&lt;/p></description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dp666.net/blog/guest-account-lifecycle-management/cover.png"/></item><item><title>Setting Managed Identity Permissions via PowerShell (No Portal Needed)</title><link>https://dp666.net/blog/managed-identity-permissions-powershell/</link><pubDate>Fri, 26 Sep 2025 10:00:00 +0100</pubDate><guid>https://dp666.net/blog/managed-identity-permissions-powershell/</guid><description>&lt;h2 class="relative group">The Problem
+ &lt;div id="the-problem" class="anchor">&lt;/div>
+ 
+ &lt;span
+ class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+ &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#the-problem" aria-label="Anchor">#&lt;/a>
+ &lt;/span>
+ 
+&lt;/h2>
+&lt;p>Managed Identities are the recommended way to authenticate Azure resources &amp;ndash; Azure Functions, Logic Apps, Automation Accounts &amp;ndash; to Microsoft Graph. No secrets. No certificates. No credential rotation. The identity is managed by the platform.&lt;/p>
+&lt;p>The problem comes when you need to assign Graph API permissions to that identity. Microsoft added basic portal support for this in late 2023 via Enterprise Applications, but it is click-heavy, not scriptable, and gives you no audit trail. If you&amp;rsquo;re deploying infrastructure as code, managing multiple identities, or need to know what every managed identity in your tenant can do &amp;ndash; you need PowerShell.&lt;/p></description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://dp666.net/blog/managed-identity-permissions-powershell/cover.png"/></item></channel></rss>
