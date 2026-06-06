@@ -16,13 +16,13 @@
     return null;
   }
 
-  function configureLeafletIcons(Leaflet) {
-    if (!Leaflet || !Leaflet.Icon || !Leaflet.Icon.Default) return;
-    delete Leaflet.Icon.Default.prototype._getIconUrl;
-    Leaflet.Icon.Default.mergeOptions({
-      iconUrl: '/lib/leaflet/marker-icon.png',
-      iconRetinaUrl: '/lib/leaflet/marker-icon-2x.png',
-      shadowUrl: '/lib/leaflet/marker-shadow.png'
+  function createGigmapIcon(Leaflet) {
+    return Leaflet.icon({
+      iconUrl: '/lib/gigmap/marker-crimson.svg',
+      iconSize: [32, 48],
+      iconAnchor: [16, 46],
+      popupAnchor: [0, -42],
+      className: 'gigmap-marker-icon'
     });
   }
 
@@ -48,7 +48,7 @@
       return;
     }
 
-    configureLeafletIcons(Leaflet);
+    var markerIcon = createGigmapIcon(Leaflet);
 
     var gigs = readGigs(mapEl);
     var withCoords = gigs.filter(function (gig) {
@@ -62,7 +62,10 @@
       grouped[key].push(gig);
     });
 
-    var map = Leaflet.map(mapEl, { scrollWheelZoom: false });
+    var map = Leaflet.map(mapEl, {
+      attributionControl: false,
+      scrollWheelZoom: false
+    });
     var isDark = document.documentElement.classList.contains('dark');
     var tileUrl = isDark
       ? 'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png'
@@ -100,7 +103,7 @@
       });
       popupContent += '</div>';
 
-      Leaflet.marker(latlng).addTo(map).bindPopup(popupContent);
+      Leaflet.marker(latlng, { icon: markerIcon }).addTo(map).bindPopup(popupContent);
     });
 
     map.fitBounds(bounds, { padding: [30, 30] });
