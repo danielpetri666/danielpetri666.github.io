@@ -10,10 +10,16 @@
       .replace(/'/g, '&#39;');
   }
 
-  function configureLeafletIcons() {
-    if (!window.L || !L.Icon || !L.Icon.Default) return;
-    delete L.Icon.Default.prototype._getIconUrl;
-    L.Icon.Default.mergeOptions({
+  function getLeaflet() {
+    if (window.leaflet && typeof window.leaflet.map === 'function') return window.leaflet;
+    if (window.L && typeof window.L.map === 'function') return window.L;
+    return null;
+  }
+
+  function configureLeafletIcons(Leaflet) {
+    if (!Leaflet || !Leaflet.Icon || !Leaflet.Icon.Default) return;
+    delete Leaflet.Icon.Default.prototype._getIconUrl;
+    Leaflet.Icon.Default.mergeOptions({
       iconUrl: '/lib/leaflet/marker-icon.png',
       iconRetinaUrl: '/lib/leaflet/marker-icon-2x.png',
       shadowUrl: '/lib/leaflet/marker-shadow.png'
@@ -36,13 +42,13 @@
 
   function initMap(mapEl) {
     if (!mapEl || mapEl.getAttribute('data-gigmap-initialized') === 'true') return;
-    if (!window.L) {
+    var Leaflet = getLeaflet();
+    if (!Leaflet) {
       console.error('Leaflet is not loaded; cannot initialize gigmap.');
       return;
     }
 
-    mapEl.setAttribute('data-gigmap-initialized', 'true');
-    configureLeafletIcons();
+    configureLeafletIcons(Leaflet);
 
     var gigs = readGigs(mapEl);
     var withCoords = gigs.filter(function (gig) {
@@ -56,7 +62,7 @@
       grouped[key].push(gig);
     });
 
-    var map = L.map(mapEl, { scrollWheelZoom: false });
+    var map = Leaflet.map(mapEl, { scrollWheelZoom: false });
     var isDark = document.documentElement.classList.contains('dark');
     var tileUrl = isDark
       ? 'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png'
@@ -65,7 +71,7 @@
       ? '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
       : '&copy; OpenStreetMap contributors';
 
-    L.tileLayer(tileUrl, { attribution: attribution }).addTo(map);
+    Leaflet.tileLayer(tileUrl, { attribution: attribution }).addTo(map);
 
     if (withCoords.length === 0) {
       map.setView([59.33, 18.07], 5);
@@ -94,15 +100,16 @@
       });
       popupContent += '</div>';
 
-      L.marker(latlng).addTo(map).bindPopup(popupContent);
+      Leaflet.marker(latlng).addTo(map).bindPopup(popupContent);
     });
 
     map.fitBounds(bounds, { padding: [30, 30] });
+    mapEl.setAttribute('data-gigmap-initialized', 'true');
     window.setTimeout(function () { map.invalidateSize(); }, 250);
   }
 
   function initAllGigmaps() {
-    if (!window.L) {
+    if (!getLeaflet()) {
       console.error('Leaflet is not loaded; cannot initialize gigmap.');
       return;
     }
