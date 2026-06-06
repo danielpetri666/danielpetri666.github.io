@@ -101,15 +101,9 @@
     window.setTimeout(function () { map.invalidateSize(); }, 250);
   }
 
-  function initAllGigmaps(attempt) {
-    attempt = attempt || 0;
-
+  function initAllGigmaps() {
     if (!window.L) {
-      if (attempt < 50) {
-        window.setTimeout(function () { initAllGigmaps(attempt + 1); }, 100);
-      } else {
-        console.error('Leaflet is not loaded; cannot initialize gigmap.');
-      }
+      console.error('Leaflet is not loaded; cannot initialize gigmap.');
       return;
     }
 
