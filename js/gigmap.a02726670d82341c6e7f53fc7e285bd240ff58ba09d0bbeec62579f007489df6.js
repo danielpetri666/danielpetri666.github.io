@@ -10,20 +10,19 @@
       .replace(/'/g, '&#39;');
   }
 
-  function getLeaflet() {
-    if (window.leaflet && typeof window.leaflet.map === 'function') return window.leaflet;
-    if (window.L && typeof window.L.map === 'function') return window.L;
+  function getMapLibre() {
+    if (window.maplibregl && typeof window.maplibregl.Map === 'function') return window.maplibregl;
     return null;
   }
 
-  function createGigmapIcon(Leaflet) {
-    return Leaflet.icon({
-      iconUrl: '/lib/gigmap/marker-crimson.svg',
-      iconSize: [32, 48],
-      iconAnchor: [16, 46],
-      popupAnchor: [0, -42],
-      className: 'gigmap-marker-icon'
-    });
+  function createGigmapMarkerElement() {
+    var marker = document.createElement('img');
+    marker.src = '/lib/gigmap/marker-crimson.svg';
+    marker.alt = '';
+    marker.width = 32;
+    marker.height = 48;
+    marker.className = 'gigmap-marker-icon';
+    return marker;
   }
 
   function readGigs(mapEl) {
@@ -42,13 +41,11 @@
 
   function initMap(mapEl) {
     if (!mapEl || mapEl.getAttribute('data-gigmap-initialized') === 'true') return;
-    var Leaflet = getLeaflet();
-    if (!Leaflet) {
-      console.error('Leaflet is not loaded; cannot initialize gigmap.');
+    var MapLibre = getMapLibre();
+    if (!MapLibre) {
+      console.error('MapLibre is not loaded; cannot initialize gigmap.');
       return;
     }
-
-    var markerIcon = createGigmapIcon(Leaflet);
 
     var gigs = readGigs(mapEl);
     var withCoords = gigs.filter(function (gig) {
@@ -62,29 +59,41 @@
       grouped[key].push(gig);
     });
 
-    var map = Leaflet.map(mapEl, {
+    var isDark = document.documentElement.classList.contains('dark');
+    var map = new MapLibre.Map({
+      container: mapEl,
+      style: 'https://tiles.openfreemap.org/styles/' + (isDark ? 'dark' : 'positron'),
+      center: [18.07, 59.33],
+      zoom: 5,
       attributionControl: false,
-      scrollWheelZoom: false
+      scrollZoom: false
     });
-    var tileUrl = 'https://tile.openstreetmap.org/{z}/{x}/{y}.png';
-    var attribution = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors';
+    map.addControl(new MapLibre.NavigationControl({ showCompass: false }), 'top-left');
 
-    Leaflet.tileLayer(tileUrl, {
-      attribution: attribution,
-      maxZoom: 19
-    }).addTo(map);
+    map.on('style.load', function () {
+      map.getStyle().layers.forEach(function (layer) {
+        if (layer.type === 'symbol' && layer.id.indexOf('place_country_') === 0) {
+          map.setLayoutProperty(layer.id, 'text-field', [
+            'coalesce',
+            ['get', 'name_en'],
+            ['get', 'name:latin'],
+            ['get', 'name']
+          ]);
+        }
+      });
+    });
+    mapEl.setAttribute('data-gigmap-initialized', 'true');
 
     if (withCoords.length === 0) {
-      map.setView([59.33, 18.07], 5);
       return;
     }
 
-    var bounds = [];
+    var bounds = new MapLibre.LngLatBounds();
     Object.keys(grouped).forEach(function (key) {
       var gigsAtLocation = grouped[key];
       var firstGig = gigsAtLocation[0];
-      var latlng = [firstGig.lat, firstGig.lon];
-      bounds.push(latlng);
+      var lnglat = [firstGig.lon, firstGig.lat];
+      bounds.extend(lnglat);
 
       var popupContent = '<div style="max-height: 300px; overflow-y: auto;">';
       if (gigsAtLocation.length > 1) {
@@ -101,17 +110,22 @@
       });
       popupContent += '</div>';
 
-      Leaflet.marker(latlng, { icon: markerIcon }).addTo(map).bindPopup(popupContent);
+      new MapLibre.Marker({
+        element: createGigmapMarkerElement(),
+        anchor: 'bottom'
+      })
+        .setLngLat(lnglat)
+        .setPopup(new MapLibre.Popup({ offset: 38, maxWidth: '360px' }).setHTML(popupContent))
+        .addTo(map);
     });
 
-    map.fitBounds(bounds, { padding: [30, 30] });
-    mapEl.setAttribute('data-gigmap-initialized', 'true');
-    window.setTimeout(function () { map.invalidateSize(); }, 250);
+    map.fitBounds(bounds, { padding: 30, duration: 0, maxZoom: 12 });
+    window.setTimeout(function () { map.resize(); }, 250);
   }
 
   function initAllGigmaps() {
-    if (!getLeaflet()) {
-      console.error('Leaflet is not loaded; cannot initialize gigmap.');
+    if (!getMapLibre()) {
+      console.error('MapLibre is not loaded; cannot initialize gigmap.');
       return;
     }
 
