@@ -66,15 +66,13 @@
       attributionControl: false,
       scrollWheelZoom: false
     });
-    var isDark = document.documentElement.classList.contains('dark');
-    var tileUrl = isDark
-      ? 'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png'
-      : 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
-    var attribution = isDark
-      ? '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
-      : '&copy; OpenStreetMap contributors';
+    var tileUrl = 'https://tile.openstreetmap.org/{z}/{x}/{y}.png';
+    var attribution = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors';
 
-    Leaflet.tileLayer(tileUrl, { attribution: attribution }).addTo(map);
+    Leaflet.tileLayer(tileUrl, {
+      attribution: attribution,
+      maxZoom: 19
+    }).addTo(map);
 
     if (withCoords.length === 0) {
       map.setView([59.33, 18.07], 5);
